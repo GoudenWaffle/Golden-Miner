@@ -80,9 +80,24 @@ public class Hook : MonoBehaviour
 
     private void OnExtension()
     {
+        // Length += Time.deltaTime * LSpeed;
+        //  transform.localScale = new Vector3(transform.localScale.x, Length, transform.localScale.z);
+       //  go.localScale = new Vector3(go.localScale.x, Length, go.localScale.z);
+        float previousLength = Length;
         Length += Time.deltaTime * LSpeed;
+        float deltaLength = Length - previousLength;
+
+       transform.localScale = new Vector3(transform.localScale.x, Length, transform.localScale.z);
+       // transform.position += new Vector3(0, deltaLength / 2, 0); // 调整位置以保持顶部不动
+
+       // go.localScale = new Vector3(go.localScale.x, Length, go.localScale.z);
+       // go.position += new Vector3(0, deltaLength / 2, 0); // 同样对另一个对象进行位置调整
+    }
+
+    private void OnTakebak()
+    {
+        Length -= Time.deltaTime * LSpeed;
         transform.localScale = new Vector3(transform.localScale.x, Length, transform.localScale.z);
-        go.localScale = new Vector3(go.localScale.x, Length, go.localScale.z);
     }
 
 
