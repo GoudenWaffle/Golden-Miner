@@ -92,6 +92,11 @@ public class Hook : MonoBehaviour
 
        // go.localScale = new Vector3(go.localScale.x, Length, go.localScale.z);
        // go.position += new Vector3(0, deltaLength / 2, 0); // 同样对另一个对象进行位置调整
+
+        if(Length > 10)
+        {
+            Mystate = State.Takeback;
+        }
     }
 
     private void OnTakebak()
