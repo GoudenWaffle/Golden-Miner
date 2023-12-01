@@ -19,6 +19,8 @@ public class Hook : MonoBehaviour
     private float LSpeed = 3.0f;
     public Transform go;
 
+    public GameObject grab; // the hand
+
 
     // Start is called before the first frame update
     void Start()
@@ -99,6 +101,12 @@ public class Hook : MonoBehaviour
         {
             Length = 2;
             Mystate = State.Swing;
+            //when ready to transform state, destroy the game obj
+            if (grab.transform.childCount == 1)
+            {
+                Destroy(grab.transform.GetChild(0).gameObject);
+            }
+
         }
     }
 
