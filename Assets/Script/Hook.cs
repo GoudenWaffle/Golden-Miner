@@ -84,7 +84,7 @@ public class Hook : MonoBehaviour
         Length += Time.deltaTime * LSpeed;
         transform.localScale = new Vector3(transform.localScale.x, Length, transform.localScale.z);
      
-        if(Length > 13)
+        if(Length > 15)
         {
             Mystate = State.Takeback;
         }
