@@ -20,6 +20,14 @@ public class GoldPrice : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
+
+
+    private void OnDestroy()
+    {
+        GaUI.OnMoney(Value);
+        Debug.Log(Value);
+    }
+
 }
