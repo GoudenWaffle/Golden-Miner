@@ -341,7 +341,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -431, y: 244}
+  m_AnchoredPosition: {x: -186, y: 124.00001}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &394437500
@@ -373,8 +373,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4279386080
+  m_fontColor: {r: 0.8773585, g: 0.24585739, b: 0.07035423, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -391,8 +391,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -475,7 +475,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 494, y: 313}
+  m_AnchoredPosition: {x: 306, y: 167}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &414029987
@@ -525,8 +525,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -822,6 +822,7 @@ GameObject:
   - component: {fileID: 575816495}
   - component: {fileID: 575816494}
   - component: {fileID: 575816496}
+  - component: {fileID: 575816497}
   m_Layer: 0
   m_Name: Rock
   m_TagString: Untagged
@@ -941,6 +942,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.30408832, y: 0.32025903}
   m_EdgeRadius: 0
+--- !u!114 &575816497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575816493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3da9d30d6e3894d61bb5962acd2a0725, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Value: -10
 --- !u!1 &593772284
 GameObject:
   m_ObjectHideFlags: 0
@@ -1263,7 +1277,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -458, y: 319}
+  m_AnchoredPosition: {x: -213, y: 179}
   m_SizeDelta: {x: 106.8167, y: 22.4207}
   m_Pivot: {x: 0.6999725, y: 0.5}
 --- !u!114 &787993964
@@ -1295,8 +1309,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4281513011
+  m_fontColor: {r: 0.1988121, g: 0.7075472, b: 0.19691172, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1313,13 +1327,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -1349,7 +1363,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -99.158356, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1374,6 +1388,7 @@ GameObject:
   - component: {fileID: 807187822}
   - component: {fileID: 807187821}
   - component: {fileID: 807187820}
+  - component: {fileID: 807187823}
   m_Layer: 0
   m_Name: Rock (2)
   m_TagString: Untagged
@@ -1493,6 +1508,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &807187823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807187819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3da9d30d6e3894d61bb5962acd2a0725, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Value: -10
 --- !u!1 &809549282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1605,6 +1633,7 @@ GameObject:
   - component: {fileID: 985660505}
   - component: {fileID: 985660504}
   - component: {fileID: 985660503}
+  - component: {fileID: 985660506}
   m_Layer: 0
   m_Name: Rock (3)
   m_TagString: Untagged
@@ -1724,6 +1753,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &985660506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985660502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3da9d30d6e3894d61bb5962acd2a0725, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Value: -10
 --- !u!1 &1099067634
 GameObject:
   m_ObjectHideFlags: 0
@@ -1758,7 +1800,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 496, y: 242}
+  m_AnchoredPosition: {x: 305, y: 123}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1099067636
@@ -1808,8 +1850,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2952,9 +2994,11 @@ MonoBehaviour:
   Level: {fileID: 414029987}
   LevelTime: {fileID: 1099067636}
   money: 0
-  target: 100
-  level: 90
-  levelTime: 1
+  target: 60
+  level: 1
+  levelTime: 100
+  targetScene: Over
+  targetScene2: 
 --- !u!114 &2082315775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2984,7 +3028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -3053,6 +3097,7 @@ GameObject:
   - component: {fileID: 2099274955}
   - component: {fileID: 2099274954}
   - component: {fileID: 2099274953}
+  - component: {fileID: 2099274956}
   m_Layer: 0
   m_Name: Rock (1)
   m_TagString: Untagged
@@ -3172,6 +3217,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2099274956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099274952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3da9d30d6e3894d61bb5962acd2a0725, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Value: -10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

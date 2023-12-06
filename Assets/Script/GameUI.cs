@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameUI : MonoBehaviour
 {
@@ -15,7 +16,9 @@ public class GameUI : MonoBehaviour
     public int target;
     public int level;
     public float levelTime;
-    
+
+    public string targetScene;
+    public string targetScene2;
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +36,12 @@ public class GameUI : MonoBehaviour
     void Update()
     {
         //time count down
-        LevelTime.text = (levelTime -= Time.deltaTime).ToString();
+        LevelTime.text = (levelTime -= Time.deltaTime).ToString("0");
+        if(levelTime<= 0)
+        {
+            levelTime = 0;
+            SceneManager.LoadScene(targetScene);
+        }
     }
 
 
@@ -42,5 +50,10 @@ public class GameUI : MonoBehaviour
     {
         money = money + Value;
         Money.text = money.ToString();
+
+        if(money>= target)
+        {
+            SceneManager.LoadScene(targetScene2);
+        }
     }
 }
