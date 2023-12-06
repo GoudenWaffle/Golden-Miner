@@ -16,7 +16,7 @@ public class Hook : MonoBehaviour
     private float speed = 60f; //the speed for the hook to swing
     private Vector3 v3;
     private float Length =1;
-    private float LSpeed = 3.0f;
+    private float LSpeed = 5.0f;
     public Transform go;
 
     public GameObject grab; // the hand

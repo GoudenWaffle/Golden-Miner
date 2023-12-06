@@ -6,11 +6,7 @@ public class Grab : MonoBehaviour
 {
 
     public Transform go;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   
 
     // Update is called once per frame
     void Update()
@@ -28,6 +24,15 @@ public class Grab : MonoBehaviour
         //have the item and hook goes back
         //taking state from other object
         go.parent.GetComponent<Hook>().Mystate = Hook.State.Takeback;
+
+      //  if (Hook != null)
+      //  {
+      //      if (collision.gameObject.tag == "sG") 
+      //      {
+     //           Hook.ChangeLSpeed(7.0f);
+
+      //      }
+     //   }
     }
 
 
