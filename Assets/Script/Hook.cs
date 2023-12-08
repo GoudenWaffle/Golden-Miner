@@ -18,6 +18,7 @@ public class Hook : MonoBehaviour
     private float Length =1;
     //
     public float LSpeed = 5.0f;//hook go
+    public float originalSpeed; // Variable to store original speed
     //
     public Transform go;
 
@@ -27,6 +28,7 @@ public class Hook : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        originalSpeed = LSpeed;
         v3 = Vector3.forward;
     }
 
@@ -56,6 +58,7 @@ public class Hook : MonoBehaviour
         {
             OnTakebak();
         }
+
 
 
 
@@ -110,9 +113,20 @@ public class Hook : MonoBehaviour
                 Destroy(grab.transform.GetChild(0).gameObject);
             }
 
+            OnReachPlayer();
+
         }
     }
 
+    public void OnReachPlayer()
+    {
+        ResetSpeed();
+    }
+
+    public void ResetSpeed()
+    {
+        LSpeed = originalSpeed;
+    }
 
 
 }

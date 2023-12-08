@@ -59,7 +59,10 @@ public class Grab : MonoBehaviour
             }
             // Set the state to Takeback
             hookScript.Mystate = Hook.State.Takeback;
-        }
+            //hookScript.LSpeed = hookScript.originalSpeed;
+           // hookScript.ResetSpeed();
+        
+    }
     
     }
 
