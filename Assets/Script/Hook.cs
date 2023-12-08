@@ -16,7 +16,9 @@ public class Hook : MonoBehaviour
     private float speed = 60f; //the speed for the hook to swing
     private Vector3 v3;
     private float Length =1;
-    private float LSpeed = 5.0f;
+    //
+    public float LSpeed = 5.0f;//hook go
+    //
     public Transform go;
 
     public GameObject grab; // the hand
@@ -94,6 +96,7 @@ public class Hook : MonoBehaviour
 
     private void OnTakebak()
     {
+
         Length -= Time.deltaTime * LSpeed;
         transform.localScale = new Vector3(transform.localScale.x, Length, transform.localScale.z);
         //when to stop
